@@ -4,9 +4,6 @@ public class Endereco {
     private String rua;
     private String cep;
 
-    public Endereco(){
-        return;
-    }
     public Endereco(String rua, String cep) {
         this.rua = rua;
         this.cep = cep;

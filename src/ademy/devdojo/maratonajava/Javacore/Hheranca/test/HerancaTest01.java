@@ -5,15 +5,15 @@ import ademy.devdojo.maratonajava.Javacore.Hheranca.domain.Pessoa;
 
 public class HerancaTest01 {
     public static void main(String[] args) {
-        Endereco endereco = new Endereco();
-        endereco.setRua("Rua 3");
-        endereco.setCep("012345-209");
-        Pessoa pessoa = new Pessoa();
-        pessoa.setNome("Toyohisa Shimazu");
-        pessoa.setCpf("123456789-87");
+        Endereco endereco = new Endereco("Rua 3","012345-209");
+        Pessoa pessoa = new Pessoa("Toyohisa Shimazu","123456789-87");
         pessoa.setEndereco(endereco);
         pessoa.imprime();
 
-        Funcionario funcionario = new Funcionario(); 
+        Funcionario funcionario = new Funcionario("Echirio oda");
+        funcionario.setCpf("222222222");
+        funcionario.setEndereco(endereco);
+        funcionario.setSalario(20000);
+        funcionario.imprime();
     }
 }
