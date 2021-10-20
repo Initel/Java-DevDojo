@@ -2,7 +2,7 @@ package ademy.devdojo.maratonajava.Javacore.Oexeption.exeption.test;
 import java.io.File;
 import java.io.IOException;
 
-public class ExeptionTest01 {
+public class ExeptionTest02 {
     public static void main(String[] args){
         criarNovoArquivo();
     }
@@ -14,6 +14,7 @@ public class ExeptionTest01 {
             System.out.println("Arquivo criado: " + criado);
         }catch (IOException e){
             e.printStackTrace();
+            throw new RuntimeException("Problema na hora de criar o arquivo.");
         }
 
     }
