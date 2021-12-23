@@ -26,5 +26,6 @@ public class LocalDateTest01 {
         System.out.println(agora);
         System.out.println(LocalDate.MAX);
         System.out.println(LocalDate.MIN);
+        //TESTE
     }
 }
